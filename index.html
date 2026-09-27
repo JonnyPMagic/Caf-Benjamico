@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cafe Benjamico – Frühstück, Lunch &amp; Café in Riegelsberg</title>
-  <meta name="description" content="Cafe Benjamico in Riegelsberg-Walpershofen: Frühstück den ganzen Tag, Lunch, Kaffee &amp; Kuchen – auch vegetarisch und vegan. Private Feiern und Trauerkaffee.">
-  <meta name="theme-color" content="#2f3a35">
+  <meta name="description" content="Cafe Benjamico in Riegelsberg-Walpershofen: Frühstück den ganzen Tag, Lunch, Kaffee &amp; Kuchen – auch vegetarisch und vegan. Private Feiern und Trauerfeiern.">
+  <meta name="theme-color" content="#1d3a2b">
   <meta property="og:title" content="Cafe Benjamico – Frühstück, Lunch &amp; Café">
   <meta property="og:description" content="Frühstück den ganzen Tag, Lunch, Kaffee &amp; Kuchen in Riegelsberg-Walpershofen.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://cafebenjamico.de/">
   <meta property="og:image" content="https://cafebenjamico.de/assets/img/innenraum-1400.webp">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/allison-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/cormorant-garamond-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/style.css">
@@ -90,112 +90,110 @@
   </header>
 
   <main id="main">
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__text reveal">
-          <p class="eyebrow">Breakfast · Lunch · Events</p>
-          <h1>Frühstück den ganzen Tag. <em>Und alles, was danach kommt.</em></h1>
-          <p class="lead">Guter Kaffee, hausgemachter Kuchen und ehrliche Küche – gesund, vegetarisch und vegan. Kommen Sie vorbei und fühlen Sie sich wohl.</p>
-          <div class="hero__actions">
-            <a class="btn" href="https://mylightspeed.app/reservation/7c834812-f92a-4272-9d08-bcf47c01e505/reservation" target="_blank" rel="noopener">Tisch reservieren</a>
-            <a class="btn btn--ghost" href="speisekarte.html">Zur Speisekarte</a>
-          </div>
-          <ul class="hero__facts">
-            <li><strong>Di – So</strong><span>9 – 17 Uhr</span></li>
-            <li><strong>Küche</strong><span>bis 16 Uhr</span></li>
-            <li><strong>Montag</strong><span>Ruhetag</span></li>
-          </ul>
-        </div>
-        <div class="hero__art reveal">
-          <img class="hero__photo" src="assets/img/innenraum-800.webp" srcset="assets/img/innenraum-800.webp 800w, assets/img/innenraum-1400.webp 1200w" sizes="(max-width: 860px) 90vw, 440px" width="1200" height="1600" alt="Gedeckte Tische im hellen Gastraum des Cafe Benjamico mit Birken-Wandgestaltung und gemusterten Fliesen" fetchpriority="high">
-          <svg class="hero__logo" viewBox="0 0 400 400" role="img" aria-label="Logo Cafe Benjamico – Breakfast, Lunch, Events"><use href="#logo"/></svg>
+    <section class="stage">
+      <img class="stage__img" src="assets/img/innenraum-800.webp" srcset="assets/img/innenraum-800.webp 800w, assets/img/innenraum-1400.webp 1200w" sizes="100vw" width="1200" height="1600" alt="Gastraum des Cafe Benjamico mit Birken-Wandgestaltung, Fliesen und gedeckter Tafel" fetchpriority="high">
+      <div class="container stage__content">
+        <p class="stage__tag">Breakfast · Lunch · Events</p>
+        <h1>Cafe Benjamico</h1>
+        <p class="stage__text">Gemütliche Atmosphäre, guter Service und moderne, leckere Gerichte – in Riegelsberg-Walpershofen.</p>
+        <div class="btn-row">
+          <a class="btn btn--light" href="https://mylightspeed.app/reservation/7c834812-f92a-4272-9d08-bcf47c01e505/reservation" target="_blank" rel="noopener">Tisch reservieren</a>
+          <a class="btn btn--outline-light" href="speisekarte.html">Speisekarte</a>
         </div>
       </div>
     </section>
 
-    <!-- Angebot -->
+    <div class="facts">
+      <div class="container facts__inner">
+        <p class="facts__item"><b>Geöffnet</b>Di – So 9 – 17 Uhr · Küche bis 16 Uhr</p>
+        <a class="facts__item" href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Benjamico+Salbacher+Str.+1+66292+Riegelsberg" target="_blank" rel="noopener"><b>Adresse</b>Salbacher Str. 1, Riegelsberg</a>
+        <a class="facts__item" href="tel:+4968066030478"><b>Telefon</b>06806 6030478</a>
+      </div>
+    </div>
+
     <section class="section" id="angebot">
       <div class="container">
         <header class="section__head reveal">
-          <p class="eyebrow">Was Sie erwartet</p>
-          <h2>Vom ersten Kaffee bis zum letzten Stück Kuchen</h2>
+          <h2 class="script">Unser Angebot</h2>
+          <p class="ruled">Frühstück und warme Küche bis 16:00 Uhr</p>
         </header>
-        <div class="cards cards--3">
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><circle cx="24" cy="26" r="14"/><circle cx="24" cy="26" r="6" class="fill"/><path d="M8 12h32"/></svg>
-            </div>
+        <div class="trio">
+          <article class="trio__item reveal">
+            <img src="assets/img/dessert-800.webp" srcset="assets/img/dessert-800.webp 800w, assets/img/dessert-1400.webp 1400w" sizes="(max-width: 900px) 100vw, 33vw" width="1400" height="1867" alt="Panna cotta mit Beeren, Rhabarber und Beerensorbet" loading="lazy" decoding="async">
             <h3>Frühstück – den ganzen Tag lang</h3>
-            <p>Erleben Sie köstliche Frühstücksvariationen wie zum Beispiel French Toast oder Eier Benedikt. Außerdem leckere Bagels und gefüllte Croissants. Selbstverständlich auch mit vegetarischen und veganen Alternativen.</p>
-            <p class="card__links"><a href="speisekarte.html#fruehstueck">Zur Frühstückskarte →</a></p>
+            <p>French Toast, Eier Benedikt, Bagels und gefüllte Croissants – selbstverständlich auch mit vegetarischen und veganen Alternativen.</p>
+            <a class="link" href="speisekarte.html#fruehstueck">Zur Frühstückskarte</a>
           </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><path d="M6 26h36a18 18 0 0 1-36 0z"/><path d="M16 18c2-4 6-6 8-10M26 18c2-4 6-6 8-10"/></svg>
-            </div>
+          <article class="trio__item reveal">
+            <img src="assets/img/wraps-800.webp" srcset="assets/img/wraps-800.webp 800w, assets/img/wraps-1400.webp 1200w" sizes="(max-width: 900px) 100vw, 33vw" width="1200" height="1600" alt="Frisch gegrillte Falafel-Wraps mit Joghurt-Dip" loading="lazy" decoding="async">
             <h3>Lunch</h3>
-            <p>Abwechslungsreicher, saisonaler Mittagstisch. Auch hier bieten wir Ihnen eine vegetarische und vegane Auswahl. Sie haben es eilig? Dann nehmen Sie Ihr Lunch einfach mit.</p>
-            <p class="card__links"><a href="speisekarte.html#lunch">Zur Lunchkarte →</a></p>
+            <p>Abwechslungsreicher, saisonaler Mittagstisch – auch vegetarisch und vegan. Sie haben es eilig? Dann nehmen Sie Ihr Lunch einfach mit.</p>
+            <a class="link" href="speisekarte.html#lunch">Zur Lunchkarte</a>
           </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><path d="M12 6h10l-1 12a4 4 0 0 1-8 0z"/><path d="M17 22v16M12 40h10"/><path d="M28 6h10l-1 12a4 4 0 0 1-8 0z"/><path d="M33 22v16M28 40h10"/></svg>
-            </div>
+          <article class="trio__item reveal">
+            <img src="assets/img/wintergarten-800.webp" srcset="assets/img/wintergarten-800.webp 800w, assets/img/wintergarten-1400.webp 1400w" sizes="(max-width: 900px) 100vw, 33vw" width="1400" height="1749" alt="Für eine Geburtstagsfeier dekorierter Tisch im Wintergarten" loading="lazy" decoding="async">
             <h3>Events</h3>
-            <p>Besondere Events vor Ort, Firmenfeiern, private Veranstaltungen und Catering. Wir richten auch Trauerfeiern aus. Sprechen Sie uns einfach an.</p>
-            <p class="card__links"><a href="feiern.html">Private Feiern →</a><a href="trauerfeiern.html">Trauerfeiern →</a></p>
+            <p>Besondere Events vor Ort, Firmenfeiern, private Veranstaltungen und Catering. Wir richten auch Trauerfeiern aus.</p>
+            <a class="link" href="feiern.html">Private Feiern</a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Einblicke -->
-    <section class="section section--dark" id="einblicke">
+    <section class="section section--dark">
+      <div class="container about">
+        <div class="reveal">
+          <h2 class="about__title">Wie viel <strong>Benjamin</strong> steckt&nbsp;in <span class="script">Cafe Benjamico?</span></h2>
+          <p class="about__text">Bei uns dreht sich alles um guten Geschmack, ehrliche Zutaten und herzliche Begegnungen. Egal ob Sie den Tag mit einem ausgiebigen Frühstück beginnen, mit Freunden ein Glas Wein trinken oder einfach eine kleine Auszeit genießen möchten – wir freuen uns, dass Sie hier sind.</p>
+        </div>
+        <ul class="about__list reveal">
+          <li>liebt guten Kaffee</li>
+          <li>liebt es zu kochen</li>
+          <li>isst mit dem Auge mit</li>
+          <li>Pescetarier</li>
+          <li>ein wahrer Saarländer</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--ivory">
       <div class="container">
         <header class="section__head reveal">
-          <p class="eyebrow">Aus unserer Küche</p>
-          <h2>Mit Liebe gemacht</h2>
-          <p class="lead">Vom herzhaften Lunch bis zum feinen Dessert – frisch zubereitet und schön angerichtet.</p>
+          <h2 class="script">Feiern &amp; Anlässe</h2>
+          <p class="ruled">Für bis zu 40 Personen</p>
         </header>
-        <div class="gallery reveal">
-          <figure class="gallery__item">
-            <img src="assets/img/dessert-800.webp" srcset="assets/img/dessert-800.webp 800w, assets/img/dessert-1400.webp 1400w" sizes="(max-width: 860px) 100vw, 50vw" alt="Panna cotta mit Beeren, Rhabarber und Beerensorbet" loading="lazy" decoding="async">
-          </figure>
-          <figure class="gallery__item">
-            <img src="assets/img/wraps-800.webp" srcset="assets/img/wraps-800.webp 800w, assets/img/wraps-1400.webp 1400w" sizes="(max-width: 860px) 100vw, 50vw" alt="Frisch gegrillte Falafel-Wraps mit Joghurt-Dip am Buffet" loading="lazy" decoding="async">
-          </figure>
+        <div class="pair">
+          <article class="pair__item panel reveal">
+            <h3>Private Feiern</h3>
+            <p>Ob Geburtstag, Taufe, Kommunion, Konfirmation, Jubiläum oder ein anderes Familienfest – besondere Anlässe verdienen einen Ort, an dem man sich wohlfühlt. Sie genießen die Zeit mit Familie und Freunden, wir kümmern uns um das leibliche Wohl Ihrer Gäste.</p>
+            <a class="link" href="feiern.html">Mehr erfahren</a>
+          </article>
+          <article class="pair__item panel reveal">
+            <h3>Trauerfeiern</h3>
+            <p>Nach einer Beisetzung bieten wir einen ruhigen und stilvollen Rahmen für das gemeinsame Beisammensein mit Familie und Freunden. Kuchen, Schnittchen und Filterkaffee – Standardgedeckt 19&nbsp;€ pro Person.</p>
+            <a class="link" href="trauerfeiern.html">Mehr erfahren</a>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Feiern -->
-    <section class="section" id="feiern">
-      <div class="container split">
-        <div class="split__text reveal">
-          <p class="eyebrow">Events</p>
-          <h2>Ihre Feier. Unser Café.</h2>
-          <p>Ob Geburtstag, Taufe, Kommunion, Konfirmation, Jubiläum oder ein anderes Familienfest – besondere Anlässe verdienen einen Ort, an dem man sich wohlfühlt. Sie genießen die Zeit mit Familie und Freunden, wir kümmern uns um das leibliche Wohl Ihrer Gäste.</p>
-          <p>Auch in schweren Stunden sind wir für Sie da: Nach einer Beisetzung bieten wir einen ruhigen und stilvollen Rahmen für das gemeinsame Beisammensein – mehr dazu unter <a href="trauerfeiern.html">Trauerfeiern</a>.</p>
-          <div class="btn-row"><a class="btn" href="feiern.html">Mehr zu privaten Feiern</a><a class="btn btn--ghost" href="feiern.html#anfrage">Anfrage stellen</a></div>
-        </div>
-        <div class="split__media reveal">
-          <img class="split__photo" src="assets/img/wintergarten-800.webp" srcset="assets/img/wintergarten-800.webp 800w, assets/img/wintergarten-1400.webp 1400w" sizes="(max-width: 860px) 100vw, 50vw" alt="Für eine Geburtstagsfeier dekorierter Tisch im Wintergarten" loading="lazy" decoding="async">
-        <ul class="list">
-          <li><span>01</span><div><h3>Private Feiern</h3><p>Geburtstage, Taufen, Jubiläen, Familienfeste</p></div></li>
-          <li><span>02</span><div><h3>Trauerfeiern</h3><p>Standardgedeckt 19&nbsp;€ pro Person</p></div></li>
-          <li><span>03</span><div><h3>Bis zu 40 Personen</h3><p>Je nach Termin auch exklusiv buchbar</p></div></li>
+    <section class="section partners">
+      <div class="container reveal">
+        <p class="eyebrow">Unsere Lieferanten</p>
+        <p class="lead" style="margin-inline:auto">Wir arbeiten mit regionalen Partnern und Manufakturen zusammen, die unsere Werte teilen.</p>
+        <ul>
+          <li>Brot und Sinne</li>
+          <li>Geflügelhof Zenner</li>
+          <li>Bruch Brauerei</li>
+          <li>Black Hen Rösterei</li>
         </ul>
-        </div>
       </div>
     </section>
 
-    <!-- Besuch -->
-    <section class="section section--tint" id="besuch">
+    <section class="section section--ivory" id="besuch">
       <div class="container visit">
-        <div class="visit__card reveal">
-          <p class="eyebrow">Öffnungszeiten</p>
-          <h2>Wann wir für Sie da sind</h2>
+        <div class="reveal">
+          <h2>Öffnungszeiten</h2>
           <table class="hours">
             <tbody>
               <tr data-day="1"><th>Montag</th><td>Ruhetag</td></tr>
@@ -207,57 +205,50 @@
               <tr data-day="0"><th>Sonntag</th><td>9:00 – 17:00</td></tr>
             </tbody>
           </table>
-          <p class="note">Küche bis 16:00 Uhr</p>
-          <p class="status" id="status" hidden></p>
+          <p class="note" style="margin-top:1rem">Frühstück und warme Küche bis 16:00 Uhr · Lunch ab 11:30 Uhr</p>
         </div>
-        <div class="visit__card visit__card--dark reveal">
-          <p class="eyebrow">Anfahrt</p>
-          <h2>So finden Sie uns</h2>
-          <address>
-            Cafe Benjamico<br>
-            Salbacher Str. 1<br>
-            66292 Riegelsberg-Walpershofen
-          </address>
-          <a class="btn btn--light" href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Benjamico+Salbacher+Str.+1+66292+Riegelsberg" target="_blank" rel="noopener">Route planen</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Kontakt -->
-    <section class="section" id="kontakt">
-      <div class="container">
-        <header class="section__head reveal">
-          <p class="eyebrow">Kontakt</p>
-          <h2>Wir freuen uns auf Sie</h2>
-        </header>
-        <div class="contact reveal">
-          <a class="contact__item" href="tel:+4968066030478">
-            <span>Telefon</span><strong>06806 6030478</strong>
-          </a>
-          <a class="contact__item" href="mailto:info@cafebenjamico.de">
-            <span>E-Mail</span><strong>info@cafebenjamico.de</strong>
-          </a>
-          <a class="contact__item" href="https://mylightspeed.app/reservation/7c834812-f92a-4272-9d08-bcf47c01e505/reservation" target="_blank" rel="noopener">
-            <span>Online</span><strong>Tisch reservieren →</strong>
-          </a>
-        </div>
-        <div class="social reveal">
-          <a href="https://www.instagram.com/cafebenjamico/" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="fill"/></svg>
-            Instagram
-          </a>
-          <a href="https://www.facebook.com/p/Cafe-Benjamico-61587008694637/" target="_blank" rel="noopener" aria-label="Facebook">
-            <svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg>
-            Facebook
-          </a>
+        <div class="reveal" id="kontakt">
+          <h2>Besuch &amp; Kontakt</h2>
+          <address>Salbacher Str. 1<br>66292 Riegelsberg-Walpershofen</address>
+          <ul class="contact-lines">
+            <li><span>Telefon</span><a href="tel:+4968066030478">06806 6030478</a></li>
+            <li><span>E-Mail</span><a href="mailto:info@cafebenjamico.de">info@cafebenjamico.de</a></li>
+            <li><span>Instagram</span><a href="https://www.instagram.com/cafebenjamico/" target="_blank" rel="noopener">@cafebenjamico</a></li>
+          </ul>
+          <p class="note">Kostenlose Parkplätze in unmittelbarer Nähe. Kartenzahlung? Sehr gerne.</p>
+          <div class="btn-row">
+            <a class="btn" href="https://mylightspeed.app/reservation/7c834812-f92a-4272-9d08-bcf47c01e505/reservation" target="_blank" rel="noopener">Tisch reservieren</a>
+            <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Benjamico+Salbacher+Str.+1+66292+Riegelsberg" target="_blank" rel="noopener">Route planen</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer__inner">
-      <p>© <span id="year">2026</span> Cafe Benjamico · Riegelsberg</p>
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <svg viewBox="0 0 400 400" aria-hidden="true"><use href="#logo"/></svg>
+        <div>
+          <h4>Cafe Benjamico</h4>
+          <p>Salbacher Str. 1<br>66292 Riegelsberg-Walpershofen</p>
+          <p><a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Benjamico+Salbacher+Str.+1+66292+Riegelsberg" target="_blank" rel="noopener">Route planen →</a></p>
+        </div>
+      </div>
+      <div>
+        <h4>Öffnungszeiten</h4>
+        <p>Dienstag – Sonntag<br>9:00 – 17:00 Uhr</p>
+        <p>Küche bis 16:00 Uhr<br>Montag Ruhetag</p>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <p><a href="tel:+4968066030478">06806 6030478</a></p>
+        <p><a href="mailto:info@cafebenjamico.de">info@cafebenjamico.de</a></p>
+        <p><a href="https://www.instagram.com/cafebenjamico/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/p/Cafe-Benjamico-61587008694637/" target="_blank" rel="noopener">Facebook</a></p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> Cafe Benjamico</p>
       <nav aria-label="Rechtliches">
         <a href="impressum.html">Impressum</a>
         <a href="datenschutz.html">Datenschutz</a>

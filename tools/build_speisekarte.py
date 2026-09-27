@@ -42,8 +42,7 @@ def section(id_, script, title, note, dishes, after=""):
     return f'''    <section class="menu-section" id="{id_}">
       <div class="container">
         <header class="menu-section__head reveal">
-          <p class="menu-script">{script}</p>
-          <h2>{title}</h2>
+          <h2 class="menu-script">{script}</h2>
           <p class="menu-note">{note}</p>
         </header>
         <div class="dishes reveal">
@@ -113,8 +112,7 @@ body = f'''  <main id="main">
     <section class="menu-section menu-section--drinks" id="getraenke">
       <div class="container">
         <header class="menu-section__head reveal">
-          <p class="menu-script">Getränke &amp; Specials</p>
-          <h2>Getränke</h2>
+          <h2 class="menu-script">Getränke &amp; Specials</h2>
         </header>
         <div class="drinks reveal">
 {drinks}        </div>
