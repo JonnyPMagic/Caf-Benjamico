@@ -69,7 +69,7 @@
   </svg>
   <a class="skip" href="#main">Zum Inhalt springen</a>
 
-  <header class="nav" id="top">
+  <header class="nav nav--overlay" id="top">
     <div class="container nav__inner">
       <a href="index.html" class="brand" aria-label="Cafe Benjamico – zur Startseite">
         <svg class="brand__logo" viewBox="0 0 400 400" aria-hidden="true"><use href="#logo"/></svg>
@@ -93,48 +93,54 @@
     <section class="stage">
       <img class="stage__img" src="assets/img/innenraum-800.webp" srcset="assets/img/innenraum-800.webp 800w, assets/img/innenraum-1400.webp 1200w" sizes="100vw" width="1200" height="1600" alt="Gastraum des Cafe Benjamico mit Birken-Wandgestaltung, Fliesen und gedeckter Tafel" fetchpriority="high">
       <div class="container stage__content">
-        <p class="stage__tag">Breakfast · Lunch · Events</p>
-        <h1>Cafe Benjamico</h1>
-        <p class="stage__text">Gemütliche Atmosphäre, guter Service und moderne, leckere Gerichte – in Riegelsberg-Walpershofen.</p>
-        <div class="btn-row">
-          <a class="btn btn--light" href="https://mylightspeed.app/reservation/7c834812-f92a-4272-9d08-bcf47c01e505/reservation" target="_blank" rel="noopener">Tisch reservieren</a>
-          <a class="btn btn--outline-light" href="speisekarte.html">Speisekarte</a>
+        <div class="stage__main">
+          <p class="stage__tag">Breakfast · Lunch · Events</p>
+          <h1>Cafe Benjamico</h1>
+          <p class="stage__text">Gemütliche Atmosphäre, guter Service und moderne, leckere Gerichte – in Riegelsberg-Walpershofen.</p>
+          <div class="btn-row">
+            <a class="btn btn--light btn--arrow" href="https://mylightspeed.app/reservation/7c834812-f92a-4272-9d08-bcf47c01e505/reservation" target="_blank" rel="noopener">Tisch reservieren</a>
+            <a class="btn btn--outline-light" href="speisekarte.html">Speisekarte</a>
+          </div>
         </div>
+        <ul class="stage__info">
+          <li><b>Geöffnet</b>Di – So 9 – 17 Uhr<br>Küche bis 16 Uhr</li>
+          <li><b>Adresse</b><a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Benjamico+Salbacher+Str.+1+66292+Riegelsberg" target="_blank" rel="noopener">Salbacher Str. 1<br>66292 Riegelsberg</a></li>
+          <li><b>Telefon</b><a href="tel:+4968066030478">06806 6030478</a></li>
+        </ul>
       </div>
     </section>
 
-    <div class="facts">
-      <div class="container facts__inner">
-        <p class="facts__item"><b>Geöffnet</b>Di – So 9 – 17 Uhr · Küche bis 16 Uhr</p>
-        <a class="facts__item" href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Benjamico+Salbacher+Str.+1+66292+Riegelsberg" target="_blank" rel="noopener"><b>Adresse</b>Salbacher Str. 1, Riegelsberg</a>
-        <a class="facts__item" href="tel:+4968066030478"><b>Telefon</b>06806 6030478</a>
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Breakfast all day long</span><i>✦</i><span>Lunch ab 11:30 Uhr</span><i>✦</i><span>Vegetarisch &amp; vegan</span><i>✦</i><span>Private Feiern &amp; Events</span><i>✦</i>
+        <span>Breakfast all day long</span><i>✦</i><span>Lunch ab 11:30 Uhr</span><i>✦</i><span>Vegetarisch &amp; vegan</span><i>✦</i><span>Private Feiern &amp; Events</span><i>✦</i>
       </div>
     </div>
 
     <section class="section" id="angebot">
       <div class="container">
-        <header class="section__head reveal">
-          <h2 class="script">Unser Angebot</h2>
-          <p class="ruled">Frühstück und warme Küche bis 16:00 Uhr</p>
+        <header class="section__head section__head--split reveal">
+          <h2 class="display">Unser <span class="script">Angebot</span></h2>
+          <p class="lead">Vom ausgiebigen Frühstück bis zum saisonalen Mittagstisch – frisch zubereitet, mit regionalen Zutaten und selbstverständlich auch vegetarisch und vegan.</p>
         </header>
         <div class="trio">
           <article class="trio__item reveal">
-            <img src="assets/img/dessert-800.webp" srcset="assets/img/dessert-800.webp 800w, assets/img/dessert-1400.webp 1400w" sizes="(max-width: 900px) 100vw, 33vw" width="1400" height="1867" alt="Panna cotta mit Beeren, Rhabarber und Beerensorbet" loading="lazy" decoding="async">
+            <div class="trio__media"><img src="assets/img/dessert-800.webp" srcset="assets/img/dessert-800.webp 800w, assets/img/dessert-1400.webp 1400w" sizes="(max-width: 900px) 100vw, 33vw" width="1400" height="1867" alt="Panna cotta mit Beeren, Rhabarber und Beerensorbet" loading="lazy" decoding="async"><span class="trio__label">Ab 9 Uhr</span></div>
             <h3>Frühstück – den ganzen Tag lang</h3>
             <p>French Toast, Eier Benedikt, Bagels und gefüllte Croissants – selbstverständlich auch mit vegetarischen und veganen Alternativen.</p>
-            <a class="link" href="speisekarte.html#fruehstueck">Zur Frühstückskarte</a>
+            <a class="link link--arrow" href="speisekarte.html#fruehstueck">Zur Frühstückskarte</a>
           </article>
           <article class="trio__item reveal">
-            <img src="assets/img/wraps-800.webp" srcset="assets/img/wraps-800.webp 800w, assets/img/wraps-1400.webp 1200w" sizes="(max-width: 900px) 100vw, 33vw" width="1200" height="1600" alt="Frisch gegrillte Falafel-Wraps mit Joghurt-Dip" loading="lazy" decoding="async">
+            <div class="trio__media"><img src="assets/img/wraps-800.webp" srcset="assets/img/wraps-800.webp 800w, assets/img/wraps-1400.webp 1200w" sizes="(max-width: 900px) 100vw, 33vw" width="1200" height="1600" alt="Frisch gegrillte Falafel-Wraps mit Joghurt-Dip" loading="lazy" decoding="async"><span class="trio__label">Ab 11:30 Uhr</span></div>
             <h3>Lunch</h3>
             <p>Abwechslungsreicher, saisonaler Mittagstisch – auch vegetarisch und vegan. Sie haben es eilig? Dann nehmen Sie Ihr Lunch einfach mit.</p>
-            <a class="link" href="speisekarte.html#lunch">Zur Lunchkarte</a>
+            <a class="link link--arrow" href="speisekarte.html#lunch">Zur Lunchkarte</a>
           </article>
           <article class="trio__item reveal">
-            <img src="assets/img/wintergarten-800.webp" srcset="assets/img/wintergarten-800.webp 800w, assets/img/wintergarten-1400.webp 1400w" sizes="(max-width: 900px) 100vw, 33vw" width="1400" height="1749" alt="Für eine Geburtstagsfeier dekorierter Tisch im Wintergarten" loading="lazy" decoding="async">
+            <div class="trio__media"><img src="assets/img/wintergarten-800.webp" srcset="assets/img/wintergarten-800.webp 800w, assets/img/wintergarten-1400.webp 1400w" sizes="(max-width: 900px) 100vw, 33vw" width="1400" height="1749" alt="Für eine Geburtstagsfeier dekorierter Tisch im Wintergarten" loading="lazy" decoding="async"><span class="trio__label">Bis 40 Personen</span></div>
             <h3>Events</h3>
             <p>Besondere Events vor Ort, Firmenfeiern, private Veranstaltungen und Catering. Wir richten auch Trauerfeiern aus.</p>
-            <a class="link" href="feiern.html">Private Feiern</a>
+            <a class="link link--arrow" href="feiern.html">Private Feiern</a>
           </article>
         </div>
       </div>
@@ -159,20 +165,20 @@
 
     <section class="section section--ivory">
       <div class="container">
-        <header class="section__head reveal">
-          <h2 class="script">Feiern &amp; Anlässe</h2>
-          <p class="ruled">Für bis zu 40 Personen</p>
+        <header class="section__head section__head--split reveal">
+          <h2 class="display">Feiern <span class="script">&amp; Anlässe</span></h2>
+          <p class="lead">Unser Cafe bietet Platz für Gesellschaften mit bis zu 40 Personen – je nach Termin auch exklusiv.</p>
         </header>
         <div class="pair">
           <article class="pair__item panel reveal">
             <h3>Private Feiern</h3>
             <p>Ob Geburtstag, Taufe, Kommunion, Konfirmation, Jubiläum oder ein anderes Familienfest – besondere Anlässe verdienen einen Ort, an dem man sich wohlfühlt. Sie genießen die Zeit mit Familie und Freunden, wir kümmern uns um das leibliche Wohl Ihrer Gäste.</p>
-            <a class="link" href="feiern.html">Mehr erfahren</a>
+            <a class="link link--arrow" href="feiern.html">Mehr erfahren</a>
           </article>
           <article class="pair__item panel reveal">
             <h3>Trauerfeiern</h3>
             <p>Nach einer Beisetzung bieten wir einen ruhigen und stilvollen Rahmen für das gemeinsame Beisammensein mit Familie und Freunden. Kuchen, Schnittchen und Filterkaffee – Standardgedeckt 19&nbsp;€ pro Person.</p>
-            <a class="link" href="trauerfeiern.html">Mehr erfahren</a>
+            <a class="link link--arrow" href="trauerfeiern.html">Mehr erfahren</a>
           </article>
         </div>
       </div>
