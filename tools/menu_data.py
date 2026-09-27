@@ -1,4 +1,4 @@
-# Speisekarte – Quelle für speisekarte.html (Build: python3 tools/build_speisekarte.py)
+# Speisekarte: Quelle für speisekarte.html (Build: python3 tools/build_speisekarte.py)
 # Kennzeichnung: veg = vegetarisch, vegan = vegan, new = Neu
 
 FRUEHSTUECK = [
@@ -18,7 +18,7 @@ FRUEHSTUECK = [
 
 EXTRAS = [
     ("Hausgebeizter Lachs", "D,L", "5,50"),
-    ("Griechischer Joghurt (G) oder veganer Joghurt (F) mit hausgemachtem Granola (A,H) und saisonalen Früchten – auf Wunsch mit Honig oder Ahornsirup", "", "4,90"),
+    ("Griechischer Joghurt (G) oder veganer Joghurt (F) mit hausgemachtem Granola (A,H) und saisonalen Früchten, auf Wunsch mit Honig oder Ahornsirup", "", "4,90"),
     ("Brotkorb (1 Scheibe Sauerteigbrot, 1 Brötchen)", "A", "2,90"),
     ("Bagel", "A,K", "2,40"),
     ("Butter oder Honig Chili Butter", "G", "1,50"),
@@ -63,7 +63,7 @@ LUNCH = [
     dict(name="Kürbis-Salbei-Pasta", price="12,50", tag="veg", new=True, allergens="A,G,I,L",
          desc="Pasta in cremiger Kürbis-Salbei-Sauce, Ofenkürbis, Parmesan",
          extra=["+ Burrata 5,50", "+ pochiertes Ei 2,50", "+ Tofu 3,50"]),
-    dict(name="Currywurst – klassisch oder vegan", price="6,50", tag="vegan-option", allergens="klassisch A,I,L,J · vegan A,F,I,L,J",
+    dict(name="Currywurst, klassisch oder vegan", price="6,50", tag="vegan-option", allergens="klassisch A,I,L,J; vegan A,F,I,L,J",
          desc="Hausgemachte Currysauce mit frischem Sauerteigbrot (Brot & Sinne) oder Brötchen, dazu ein kleiner Salat"),
     dict(name="Herbsteintopf", price="9,90", tag="vegan", new=True, allergens="A,F,I,K,L",
          desc="Herzhafter Eintopf mit Kartoffeln, Karotten, Lauch, weißen Bohnen und Kräutern, dazu geröstetes Bergbrot von Brot & Sinne"),

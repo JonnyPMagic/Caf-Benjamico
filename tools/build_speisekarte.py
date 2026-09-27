@@ -84,14 +84,14 @@ specials = "\n              ".join(
     f'<li><span class="pl__name">{e(n)}{" ♥" if fav else ""}{f"<small>{e(s)}</small>" if s else ""}</span><span class="pl__dots"></span><span class="pl__price">{p}</span></li>'
     for n, s, p, fav in M.SPECIALS)
 
-allergene = " · ".join(f"<b>{k}</b> {e(v)}" for k, v in M.ALLERGENE)
+allergene = ", ".join(f"<b>{k}</b> {e(v)}" for k, v in M.ALLERGENE)
 
 body = f'''  <main id="main">
     <section class="page-hero page-hero--menu">
       <div class="container menu-intro reveal">
         <p class="eyebrow">Mit Liebe. Mit Qualität. Für Sie.</p>
         <h1>Mehr als nur ein Cafe.<br><em>Ein Ort zum Ankommen.</em></h1>
-        <p class="lead">Bei uns dreht sich alles um guten Geschmack, ehrliche Zutaten und herzliche Begegnungen. Egal ob Sie den Tag mit einem ausgiebigen Frühstück beginnen, mit Freunden ein Glas Wein trinken oder einfach eine kleine Auszeit genießen möchten – wir freuen uns, dass Sie hier sind.</p>
+        <p class="lead">Bei uns dreht sich alles um guten Geschmack, ehrliche Zutaten und herzliche Begegnungen. Egal ob Sie den Tag mit einem ausgiebigen Frühstück beginnen, mit Freunden ein Glas Wein trinken oder einfach eine kleine Auszeit genießen möchten: Wir freuen uns, dass Sie hier sind.</p>
       </div>
     </section>
 
@@ -130,7 +130,7 @@ body = f'''  <main id="main">
         <article class="panel reveal">
           <p class="eyebrow">Unsere Philosophie</p>
           <h2>Für Sie. Für uns. Für morgen.</h2>
-          <p>Wir glauben an ehrliche Lebensmittel, die mit Sorgfalt ausgewählt und mit Liebe zubereitet werden. Regionalität, Nachhaltigkeit und Qualität stehen für uns an erster Stelle – für einen guten Geschmack und ein gutes Gefühl.</p>
+          <p>Wir glauben an ehrliche Lebensmittel, die mit Sorgfalt ausgewählt und mit Liebe zubereitet werden. Regionalität, Nachhaltigkeit und Qualität stehen für uns an erster Stelle. Für einen guten Geschmack und ein gutes Gefühl.</p>
         </article>
         <article class="panel reveal">
           <p class="eyebrow">Unsere Lieferanten</p>
@@ -147,7 +147,7 @@ body = f'''  <main id="main">
       <div class="container">
         <div class="info-strip reveal">
           <p><strong>Kartenzahlung?</strong> Sehr gerne.</p>
-          <p><strong>Trinkgeld auch per Karte möglich.</strong> 100&nbsp;% des Trinkgelds gehen an unser Team und werden fair unter den Mitarbeitenden aufgeteilt – egal ob bar oder mit Karte.</p>
+          <p><strong>Trinkgeld auch per Karte möglich.</strong> 100&nbsp;% des Trinkgelds gehen an unser Team und werden fair unter den Mitarbeitenden aufgeteilt, egal ob bar oder mit Karte.</p>
         </div>
         <p class="allergen-legend reveal"><span class="tag tag--veg">vegetarisch</span> <span class="tag tag--vegan">vegan</span><br><b>Allergene:</b> {allergene}</p>
       </div>
@@ -159,9 +159,9 @@ body = f'''  <main id="main">
 tpl = (ROOT / "impressum.html").read_text()
 head = tpl[:tpl.index('  <main id="main"')]
 foot = tpl[tpl.index('  <footer class="footer">'):]
-head = head.replace("<title>Impressum – Cafe Benjamico</title>", "<title>Speisekarte – Cafe Benjamico</title>")
+head = head.replace("<title>Impressum | Cafe Benjamico</title>", "<title>Speisekarte | Cafe Benjamico</title>")
 head = re.sub(r'<meta name="description" content="[^"]*">\n  <meta name="robots" content="noindex">',
-              '<meta name="description" content="Speisekarte des Cafe Benjamico in Riegelsberg: Frühstück den ganzen Tag, Bagels &amp; Stullen, French Toast, saisonaler Lunch, Kaffeespezialitäten und Getränke – auch vegetarisch und vegan.">', head)
+              '<meta name="description" content="Speisekarte des Cafe Benjamico in Riegelsberg: Frühstück den ganzen Tag, Bagels &amp; Stullen, French Toast, saisonaler Lunch, Kaffeespezialitäten und Getränke, auch vegetarisch und vegan.">', head)
 head = head.replace('<a href="impressum.html" aria-current="page">', '<a href="impressum.html">')
 head = head.replace('<a href="speisekarte.html">Speisekarte</a>', '<a href="speisekarte.html" aria-current="page">Speisekarte</a>')
 (ROOT / "speisekarte.html").write_text(head + body + foot)
