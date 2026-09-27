@@ -22,6 +22,13 @@
 
   // Einblenden beim Scrollen
   const items = document.querySelectorAll('.reveal');
+  // Geschwister leicht versetzt einblenden (70 ms, höchstens 280 ms)
+  const seen = new Map();
+  items.forEach((el) => {
+    const n = seen.get(el.parentElement) || 0;
+    seen.set(el.parentElement, n + 1);
+    if (n) el.style.setProperty('--delay', Math.min(n * 70, 280) + 'ms');
+  });
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
