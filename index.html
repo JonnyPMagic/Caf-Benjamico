@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Café Benjamico – Frühstück, Lunch &amp; Café in Riegelsberg</title>
   <meta name="description" content="Café Benjamico in Riegelsberg-Walpershofen: Frühstück den ganzen Tag, Lunch, Kaffee &amp; Kuchen – auch vegetarisch und vegan. Private Feiern und Trauerkaffee.">
-  <meta name="theme-color" content="#2b1d16">
+  <meta name="theme-color" content="#2f3a35">
   <meta property="og:title" content="Café Benjamico – Frühstück, Lunch &amp; Café">
   <meta property="og:description" content="Frühstück den ganzen Tag, Lunch, Kaffee &amp; Kuchen in Riegelsberg-Walpershofen.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://cafebenjamico.de/">
+  <meta property="og:image" content="https://cafebenjamico.de/assets/img/innenraum-1400.webp">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,6 +60,7 @@
       </button>
       <nav id="menu" class="nav__menu" aria-label="Hauptnavigation">
         <a href="#angebot">Angebot</a>
+        <a href="#einblicke">Einblicke</a>
         <a href="#feiern">Feiern</a>
         <a href="#besuch">Besuch</a>
         <a href="#kontakt">Kontakt</a>
@@ -85,19 +87,9 @@
             <li><strong>Montag</strong><span>Ruhetag</span></li>
           </ul>
         </div>
-        <div class="hero__art reveal" aria-hidden="true">
-          <div class="blob"></div>
-          <svg class="cup" viewBox="0 0 240 240">
-            <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
-              <path class="steam" d="M95 60c-10-14 10-22 0-38"/>
-              <path class="steam s2" d="M120 64c-10-14 10-22 0-38"/>
-              <path class="steam s3" d="M145 60c-10-14 10-22 0-38"/>
-              <path d="M60 90h120v46a60 60 0 0 1-120 0z" fill="var(--cream)"/>
-              <path d="M180 104h14a20 20 0 0 1 0 40h-18"/>
-              <path d="M40 204h160"/>
-            </g>
-          </svg>
-          <div class="badge">
+        <div class="hero__art reveal">
+          <img class="hero__photo" src="assets/img/innenraum-800.webp" srcset="assets/img/innenraum-800.webp 800w, assets/img/innenraum-1400.webp 1200w" sizes="(max-width: 860px) 90vw, 440px" width="1200" height="1600" alt="Gedeckte Tische im hellen Gastraum des Café Benjamico mit Birken-Wandgestaltung und gemusterten Fliesen" fetchpriority="high">
+          <div class="badge" aria-hidden="true">
             <span>Den ganzen Tag</span>
             <strong>Frühstück</strong>
           </div>
@@ -145,10 +137,22 @@
       </div>
     </section>
 
-    <!-- Zitat / Band -->
-    <section class="band">
-      <div class="container band__inner reveal">
-        <p>„Ein Ort zum Ankommen – für Frühaufsteher, Wanderer, Freunde und Familie.“</p>
+    <!-- Einblicke -->
+    <section class="section section--dark" id="einblicke">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Aus unserer Küche</p>
+          <h2>Mit Liebe gemacht</h2>
+          <p class="lead">Vom herzhaften Lunch bis zum feinen Dessert – frisch zubereitet und schön angerichtet.</p>
+        </header>
+        <div class="gallery reveal">
+          <figure class="gallery__item">
+            <img src="assets/img/dessert-800.webp" srcset="assets/img/dessert-800.webp 800w, assets/img/dessert-1400.webp 1400w" sizes="(max-width: 860px) 100vw, 50vw" alt="Panna cotta mit Beeren, Rhabarber und Beerensorbet" loading="lazy" decoding="async">
+          </figure>
+          <figure class="gallery__item">
+            <img src="assets/img/wraps-800.webp" srcset="assets/img/wraps-800.webp 800w, assets/img/wraps-1400.webp 1400w" sizes="(max-width: 860px) 100vw, 50vw" alt="Frisch gegrillte Falafel-Wraps mit Joghurt-Dip am Buffet" loading="lazy" decoding="async">
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -162,11 +166,14 @@
           <p>Auch in schweren Stunden sind wir für euch da: Wir bieten einen ruhigen, würdevollen Rahmen für euren <strong>Trauerkaffee</strong>.</p>
           <a class="btn" href="#kontakt">Anfrage stellen</a>
         </div>
-        <ul class="list reveal">
+        <div class="split__media reveal">
+          <img class="split__photo" src="assets/img/wintergarten-800.webp" srcset="assets/img/wintergarten-800.webp 800w, assets/img/wintergarten-1400.webp 1400w" sizes="(max-width: 860px) 100vw, 50vw" alt="Für eine Geburtstagsfeier dekorierter Tisch im Wintergarten" loading="lazy" decoding="async">
+        <ul class="list">
           <li><span>01</span><div><h3>Private Feiern</h3><p>Geburtstage, Jubiläen, Familienfeste</p></div></li>
           <li><span>02</span><div><h3>Trauerkaffee</h3><p>In ruhiger, persönlicher Atmosphäre</p></div></li>
           <li><span>03</span><div><h3>Gruppen</h3><p>Wandergruppen und Vereine nach Absprache</p></div></li>
         </ul>
+        </div>
       </div>
     </section>
 
