@@ -55,6 +55,36 @@
     }
   } catch (_) { /* Anzeige ist optional */ }
 
+  // Anfrageformular: öffnet das E-Mail-Programm mit vorausgefüllter Anfrage
+  const form = document.getElementById('anfrage-form');
+  if (form) {
+    const error = form.querySelector('.form__error');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      let valid = true;
+      form.querySelectorAll('input, textarea').forEach((field) => {
+        const ok = field.checkValidity() && (!field.required || field.value.trim() !== '');
+        field.classList.toggle('is-invalid', !ok);
+        if (!ok) valid = false;
+      });
+      error.hidden = valid;
+      if (!valid) return;
+      const d = Object.fromEntries(new FormData(form));
+      const datum = d.datum ? new Date(d.datum + 'T00:00').toLocaleDateString('de-DE') : '–';
+      const body = [
+        `Name: ${d.vorname} ${d.nachname}`,
+        `E-Mail: ${d.email}`,
+        `Telefon: ${d.telefon}`,
+        `Wunschtermin: ${datum}`,
+        `Personenzahl: ${d.personen || '–'}`,
+        '',
+        d.nachricht
+      ].join('\n');
+      const subject = `Anfrage private Feier – ${d.vorname} ${d.nachname}`;
+      window.location.href = `mailto:info@cafebenjamico.de?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+  }
+
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 })();
