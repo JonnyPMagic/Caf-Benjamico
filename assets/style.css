@@ -292,7 +292,7 @@ address { font-style: normal; font-size: 1.2rem; line-height: 1.7; margin-bottom
 .form__error { margin: 0; color: #b4533c; font-weight: 600; font-size: .92rem; }
 
 @media (max-width: 860px) {
-  .page-hero__grid, .duo, .inquiry { grid-template-columns: 1fr; }
+  .page-hero__grid, .duo, .inquiry, .cards--3 { grid-template-columns: 1fr; }
   .page-hero__media img { aspect-ratio: 4 / 3; }
   .stat { right: 12px; bottom: 12px; }
 }
@@ -300,13 +300,28 @@ address { font-style: normal; font-size: 1.2rem; line-height: 1.7; margin-bottom
   .form__row { grid-template-columns: 1fr; }
 }
 
+.cards--3 { grid-template-columns: repeat(3, 1fr); }
+.card__links { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 1rem !important; }
+.card__links a { color: var(--accent-dark); font-weight: 600; text-decoration: none; }
+.card__links a:hover { text-decoration: underline; }
+.split__text a:not(.btn) { color: var(--accent-dark); font-weight: 600; }
+.price {
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px; margin-top: 1.4rem;
+  background: var(--cream); border-radius: 18px; padding: 16px 20px;
+}
+.price span { color: var(--muted); font-size: .95rem; }
+.price span:first-child { width: 100%; font-weight: 600; color: var(--text); text-transform: uppercase; letter-spacing: .1em; font-size: .78rem; }
+.price strong { font-family: var(--serif); font-size: 2.2rem; line-height: 1; color: var(--accent-dark); }
+.panel address { font-size: 1.05rem; margin: 0 0 1.4rem; }
+.inquiry__note { margin-top: 1.5rem; }
+
 /* Reveal on scroll */
 .js .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
 .js .reveal.is-visible { opacity: 1; transform: none; }
 
 /* Responsive */
 @media (max-width: 1000px) {
-  .cards { grid-template-columns: repeat(2, 1fr); }
+  .cards:not(.cards--3) { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 860px) {
   .nav__toggle { display: block; }
@@ -330,7 +345,7 @@ address { font-style: normal; font-size: 1.2rem; line-height: 1.7; margin-bottom
 }
 @media (max-width: 520px) {
   body { font-size: 16px; }
-  .cards, .gallery { grid-template-columns: 1fr; }
+  .cards, .cards--3, .gallery { grid-template-columns: 1fr; }
   .gallery__item { aspect-ratio: 1; }
   .hero__logo { left: -6%; width: 40%; }
 }

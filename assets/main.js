@@ -80,7 +80,7 @@
         '',
         d.nachricht
       ].join('\n');
-      const subject = `Anfrage private Feier – ${d.vorname} ${d.nachname}`;
+      const subject = `${form.dataset.subject || 'Anfrage private Feier'} – ${d.vorname} ${d.nachname}`;
       window.location.href = `mailto:info@cafebenjamico.de?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
   }
