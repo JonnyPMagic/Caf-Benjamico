@@ -85,6 +85,28 @@
     });
   }
 
+  // Speisekarte: aktiven Abschnitt in den Sprungmarken hervorheben
+  const tabs = document.querySelectorAll('.menu-tabs a');
+  if (tabs.length && 'IntersectionObserver' in window) {
+    const byId = new Map([...tabs].map((a) => [a.getAttribute('href').slice(1), a]));
+    const spy = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        tabs.forEach((a) => a.classList.remove('is-active'));
+        const tab = byId.get(entry.target.id);
+        if (tab) {
+          tab.classList.add('is-active');
+          tab.scrollIntoView({ block: 'nearest', inline: 'center' });
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    byId.forEach((_, id) => { const el = document.getElementById(id); if (el) spy.observe(el); });
+    const intro = document.querySelector('.page-hero');
+    if (intro) new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) tabs.forEach((a) => a.classList.remove('is-active'));
+    }, { rootMargin: '-45% 0px -50% 0px' }).observe(intro);
+  }
+
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 })();
