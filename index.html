@@ -14,6 +14,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/cormorant-garamond-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/style.css">
   <script>document.documentElement.classList.add('js')</script>
   <script type="application/ld+json">
@@ -47,13 +48,32 @@
   </script>
 </head>
 <body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="logo" viewBox="0 0 400 400">
+      <circle cx="200" cy="200" r="196" fill="#2b2b2b"/>
+      <defs>
+        <path id="arc-top" d="M 68.4 247.9 A 140 140 0 1 1 331.6 247.9"/>
+        <path id="arc-bottom" d="M 52 200 A 148 148 0 0 0 348 200"/>
+      </defs>
+      <g fill="#fff" font-family="'Cormorant Garamond', 'Times New Roman', serif">
+        <text font-size="42" text-anchor="middle"><textPath href="#arc-top" startOffset="50%" textLength="470" lengthAdjust="spacing">CAFE BENJAMICO</textPath></text>
+        <text font-size="19" text-anchor="middle"><textPath href="#arc-bottom" startOffset="50%" textLength="330" lengthAdjust="spacing">BREAKFAST – LUNCH – EVENTS</textPath></text>
+        <text x="172" y="202" font-size="118" text-anchor="middle">C</text>
+        <text x="236" y="290" font-size="118" text-anchor="middle">B</text>
+      </g>
+      <g stroke="#fff" stroke-width="3.2" stroke-linecap="round">
+        <line x1="266" y1="116" x2="216" y2="188"/>
+        <line x1="194" y1="212" x2="144" y2="284"/>
+      </g>
+    </symbol>
+  </svg>
   <a class="skip" href="#main">Zum Inhalt springen</a>
 
   <header class="nav" id="top">
     <div class="container nav__inner">
       <a href="#top" class="brand" aria-label="Café Benjamico – zur Startseite">
-        <img src="assets/favicon.svg" alt="" width="32" height="32">
-        <span>Café <strong>Benjamico</strong></span>
+        <svg class="brand__logo" viewBox="0 0 400 400" aria-hidden="true"><use href="#logo"/></svg>
+        <span>Cafe <strong>Benjamico</strong></span>
       </a>
       <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen">
         <span></span><span></span>
@@ -74,7 +94,7 @@
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__text reveal">
-          <p class="eyebrow">Riegelsberg · Walpershofen</p>
+          <p class="eyebrow">Breakfast · Lunch · Events</p>
           <h1>Frühstück den ganzen Tag. <em>Und alles, was danach kommt.</em></h1>
           <p class="lead">Guter Kaffee, hausgemachter Kuchen und ehrliche Küche – gesund, vegetarisch und vegan. Komm vorbei, bleib ein bisschen.</p>
           <div class="hero__actions">
@@ -89,10 +109,7 @@
         </div>
         <div class="hero__art reveal">
           <img class="hero__photo" src="assets/img/innenraum-800.webp" srcset="assets/img/innenraum-800.webp 800w, assets/img/innenraum-1400.webp 1200w" sizes="(max-width: 860px) 90vw, 440px" width="1200" height="1600" alt="Gedeckte Tische im hellen Gastraum des Café Benjamico mit Birken-Wandgestaltung und gemusterten Fliesen" fetchpriority="high">
-          <div class="badge" aria-hidden="true">
-            <span>Den ganzen Tag</span>
-            <strong>Frühstück</strong>
-          </div>
+          <svg class="hero__logo" viewBox="0 0 400 400" role="img" aria-label="Logo Cafe Benjamico – Breakfast, Lunch, Events"><use href="#logo"/></svg>
         </div>
       </div>
     </section>

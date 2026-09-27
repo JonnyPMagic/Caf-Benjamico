@@ -1,5 +1,6 @@
 @font-face { font-family: "Fraunces"; font-style: normal; font-weight: 100 900; font-display: swap; src: url("fonts/fraunces-latin-wght-normal.woff2") format("woff2"); }
 @font-face { font-family: "Fraunces"; font-style: italic; font-weight: 100 900; font-display: swap; src: url("fonts/fraunces-latin-wght-italic.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 300 700; font-display: swap; src: url("fonts/cormorant-garamond-latin-wght-normal.woff2") format("woff2"); }
 @font-face { font-family: "Inter"; font-style: normal; font-weight: 100 900; font-display: swap; src: url("fonts/inter-latin-wght-normal.woff2") format("woff2"); }
 
 :root {
@@ -79,7 +80,7 @@ p { margin: 0 0 1em; }
 .nav__inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
 .brand { display: flex; align-items: center; gap: .6em; text-decoration: none; font-family: var(--serif); font-size: 1.3rem; }
 .brand strong { font-weight: 700; }
-.brand img { border-radius: 9px; }
+.brand__logo { width: 44px; height: 44px; flex: none; }
 .nav__menu { display: flex; align-items: center; gap: 1.8rem; }
 .nav__menu a:not(.btn) { text-decoration: none; font-weight: 500; font-size: .96rem; position: relative; }
 .nav__menu a:not(.btn)::after {
@@ -115,14 +116,10 @@ p { margin: 0 0 1em; }
   width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover;
   border-radius: 200px 200px 28px 28px; box-shadow: var(--shadow);
 }
-.badge {
-  position: absolute; left: -8%; bottom: 12%;
-  background: var(--espresso); color: var(--cream);
-  padding: 1em 1.3em; border-radius: 18px; box-shadow: var(--shadow);
-  display: flex; flex-direction: column; line-height: 1.2; transform: rotate(-4deg);
+.hero__logo {
+  position: absolute; left: -12%; bottom: -6%; width: 44%; height: auto;
+  filter: drop-shadow(0 14px 24px rgba(38,48,44,.35));
 }
-.badge span { font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; opacity: .75; }
-.badge strong { font-family: var(--serif); font-size: 1.5rem; }
 
 /* Sections */
 .section { padding: clamp(64px, 9vw, 120px) 0; }
@@ -250,7 +247,7 @@ address { font-style: normal; font-size: 1.2rem; line-height: 1.7; margin-bottom
   body { font-size: 16px; }
   .cards, .gallery { grid-template-columns: 1fr; }
   .gallery__item { aspect-ratio: 1; }
-  .badge { left: 0; }
+  .hero__logo { left: -6%; width: 40%; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

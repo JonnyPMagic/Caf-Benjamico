@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+      <circle cx="200" cy="200" r="196" fill="#2b2b2b"/>
+      <defs>
+        <path id="arc-top" d="M 68.4 247.9 A 140 140 0 1 1 331.6 247.9"/>
+        <path id="arc-bottom" d="M 52 200 A 148 148 0 0 0 348 200"/>
+      </defs>
+      <g fill="#fff" font-family="'Cormorant Garamond', 'Times New Roman', serif">
+        <text font-size="42" text-anchor="middle"><textPath href="#arc-top" startOffset="50%" textLength="470" lengthAdjust="spacing">CAFE BENJAMICO</textPath></text>
+        <text font-size="19" text-anchor="middle"><textPath href="#arc-bottom" startOffset="50%" textLength="330" lengthAdjust="spacing">BREAKFAST – LUNCH – EVENTS</textPath></text>
+        <text x="172" y="202" font-size="118" text-anchor="middle">C</text>
+        <text x="236" y="290" font-size="118" text-anchor="middle">B</text>
+      </g>
+      <g stroke="#fff" stroke-width="3.2" stroke-linecap="round">
+        <line x1="266" y1="116" x2="216" y2="188"/>
+        <line x1="194" y1="212" x2="144" y2="284"/>
+      </g>
+</svg>
