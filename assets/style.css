@@ -147,6 +147,7 @@ a.facts__item:hover { background: var(--green-dark); }
 .about { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 7vw, 100px); align-items: center; }
 .about__title { font-size: clamp(1.8rem, 3vw, 2.5rem); color: #fff; margin: 0; }
 .about__title .script { display: block; color: var(--gold-light); font-size: clamp(4.4rem, 9vw, 7rem); line-height: .9; margin-top: .05em; }
+.about__portrait { width: 176px; height: 176px; border-radius: 50%; object-fit: cover; border: 1px solid var(--gold-light); padding: 6px; margin-bottom: 1.8rem; }
 .about__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid rgba(205,182,128,.4); }
 .about__list li { font-family: var(--serif); font-style: italic; font-size: clamp(1.4rem, 2.4vw, 1.8rem); color: #fff; padding: .55em 0; border-bottom: 1px solid rgba(205,182,128,.4); }
 .about__text { margin-top: 1.6rem; }
