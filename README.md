@@ -23,7 +23,17 @@ Gerichte, Preise und Allergene stehen in `tools/menu_data.py`. Nach einer Änder
 python3 tools/build_speisekarte.py
 ```
 
-Das erzeugt `speisekarte.html` neu (Kopf, Menü und Fußzeile werden aus `impressum.html` übernommen).
+Das erzeugt `speisekarte.html` neu (Kopf, Menü und Fußzeile werden aus `impressum.html` übernommen). Für Jimdo danach auch `python3 tools/build_jimdo.py` ausführen.
+
+## Auf Jimdo nutzen
+
+Die Website lässt sich zusätzlich als eigenes Layout in **Jimdo Creator** betreiben. Die Bausteine dafür erzeugt:
+
+```sh
+python3 tools/build_jimdo.py
+```
+
+Ergebnis und Schritt-für-Schritt-Anleitung: `jimdo/ANLEITUNG.md`.
 
 ## Lokal ansehen
 
